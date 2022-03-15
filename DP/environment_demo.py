@@ -1,3 +1,5 @@
+# 用于理解environment.py
+
 from environment import Environment
 import random
 
