@@ -1,0 +1,46 @@
+%% link = https://liam.page/2014/09/08/latex-introduction/
+
+% 调用article的文档类 自己也可以编写文档类 .cls文件
+%\documentclass[UTF8]{ctexart}
+% 导言区 对文档整体的设置 我们通常在导言区设置页面大小、页眉页脚样式、章节标题样式等等
+
+% 中英混排
+
+% 文档主体字体宋体
+%\setCJKmainfont{SimSun}
+%
+\documentclass{article}
+%% 公式
+\usepackage{amsmath}
+%% 图片
+\usepackage{graphicx}
+%% 页边距
+\usepackage{geometry}
+% 纸张长宽
+\geometry{papersize={20cm,15cm}}
+% 左右上下边距
+\geometry{left=1cm,right=2cm,top=3cm,bottom=4cm}
+%% 页眉页脚
+\usepackage{fancyhdr}
+\pagestyle{fancy}
+\lhead{\author{sxh}}
+\chead{\date{sa}}
+\rhead{152}
+\lfoot{}
+\cfoot{\thepage}
+\rfoot{}
+\renewcommand{\headrulewidth}{0.4pt}
+\renewcommand{\headwidth}{\textwidth}
+\renewcommand{\footrulewidth}{0pt}
+
+
+\begin{document}
+
+\begin{section}
+计算机视觉是以图像（视频）为输入，以对环境的表达
+（representation）和理解为目标，研究图像信息组织、物体和场景识
+别、进而对事件给予解释的学科。
+\end{section}
+
+
+\end{document}
